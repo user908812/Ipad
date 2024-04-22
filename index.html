@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Aleksander Orzech">
+    <meta name="description" content="Ipad with some applications on it from user908812 github.">
+    <meta name="keywords" content="ipad, device, 10, 2024, april">
+
+    <title>iPad 10</title>
+
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+    <div id="ipad">
+        <div id="frame">
+            <div id="screen">
+
+                <div id="top">
+                    <div id="time"></div>
+                    <hr>
+                    <div id="searchbar-container">
+                        <select name="searchbar" id="searchbar">
+                            <option value="null" selected></option>
+                            <option value="tictactoe">TicTacToe</option>
+                            <option value="minecraft">Minecraft</option>
+                            <option value="amongTheBullets">AmongTheBullets</option>
+                            <option value="orzechBrowser">OrzechBrowser</option>
+                            <option value="robloxWebsite">RobloxWebsite</option>
+                            <option value="orzechgpt">OrzechGPT</option>
+                            <option value="fnafMovie">FnafMovie</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="apps">
+                    <div class="app">
+                        <img draggable="false" class="logo" src="ticTacToe.png" alt="ticTacToe.png" onclick="runTicTacToe()">
+                        <div class="app-name">TicTacToe</div>
+                    </div>
+
+                    <div class="app">
+                        <img draggable="false" class="logo" src="minecraft.png" alt="minecraft.png" onclick="runMinecraft()">
+                        <div class="app-name">Minecraft</div>
+                    </div>
+
+                    <div class="app">
+                        <img draggable="false" class="logo" src="amongTheBullets.png" alt="amongTheBullets.png" onclick="runAmongTheBullets()">
+                        <div class="app-name">AmongTheBullets</div>
+                    </div>
+
+                    <div class="app">
+                        <img draggable="false" class="logo" src="orzechBrowserandGPT.png" alt="orzechBrowserandGPT.png" onclick="runOrzechBrowser()">
+                        <div class="app-name">OrzechBrowser</div>
+                    </div>
+
+                    <div class="app">
+                        <img draggable="false" class="logo" src="robloxWebsite.png" alt="robloxWebsite.png" onclick="runRobloxWebsite()">
+                        <div class="app-name">RobloxWebsite</div>
+                    </div>
+
+                    <div class="app">
+                        <img draggable="false" class="logo" src="orzechBrowserandGPT.png" alt="orzechBrowserandGPT.png" onclick="runOrzechGPT()">
+                        <div class="app-name">OrzechGPT</div>
+                    </div>
+
+                    <div class="app">
+                        <img draggable="false" class="logo" src="fnaf.png" alt="fnaf.png" onclick="runFnaf()">
+                        <div class="app-name">FnafMovie</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <button id="powerButton">&nbsp;</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

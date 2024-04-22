@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #36393e;
+    text-align: center; 
+    z-index: 0;
+}
+#ipad {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#frame {
+    width: 1425px;
+    height: 800px;
+    border-radius: 25px;
+    background-color: #000;
+}
+#screen {
+    width: 1280px;
+    height: 720px;
+    background: linear-gradient(to left, #ffc0cb, #f7758a, #f08c9c, #e7ff91, #fafac1);
+    margin-left: 72px;
+    margin-top: 30px;
+}
+#top {
+    display: grid;
+    grid-template: 200px 100px;
+}
+#time {
+    margin-left: 1200px;
+    color: #fff;
+    background-color: #000;
+}
+#searchbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#searchbar {
+    margin-top: 20px;
+    width: 400px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #ffebcd;
+    border: none;
+}
+#search {
+    margin-top: 20px;
+    margin-left: 1px;
+    width: 75px;
+    height: 35px;
+    border: none;
+    border-radius: 2px;
+}
+.apps {
+    margin-left: 10px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 160px);
+}
+.logo:hover {
+    width: 55px;
+    height: 55px;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.app-name {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 20px;
+    cursor: pointer;
+}
+#powerButton {
+    margin-top: 8px;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #c4c4c4;
+}
+button {
+    cursor: pointer;
+}
