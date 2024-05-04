@@ -18,7 +18,6 @@
     <div id="ipad">
         <div id="frame">
             <div id="screen">
-
                 <div id="top">
                     <div id="time"></div>
                     <hr>
@@ -32,6 +31,8 @@
                             <option value="robloxWebsite">RobloxWebsite</option>
                             <option value="orzechgpt">OrzechGPT</option>
                             <option value="fnafMovie">FnafMovie</option>
+                            <option value="weather">Weather</option>
+                            <option value="dino">Dino</option>
                         </select>
                     </div>
                 </div>
@@ -72,10 +73,19 @@
                         <div class="app-name">FnafMovie</div>
                     </div>
 
+                    <div class="app">
+                        <img draggable="false" class="logo" src="weather.png" alt="weather.png" onclick="runWeatherAPP()">
+                        <div class="app-name">Weather</div>
+                    </div>
                 </div>
-
+                <div class="apps">
+                    <div class="app">
+                        <img draggable="false" class="logo" src="dino.png" alt="dino.png" onclick="runChromeDino()">
+                        <div class="app-name">Dino</div>
+                    </div>
+                </div>
             </div>
-            <button id="powerButton">&nbsp;</button>
+            <button id="powerButton" onclick="destroyIpad()">&nbsp;</button>
         </div>
     </div>
     <script src="script.js"></script>

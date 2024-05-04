@@ -62,7 +62,7 @@ body {
     margin-left: 10px;
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(7, 160px);
+    grid-template-columns: repeat(8, 160px);
 }
 .logo:hover {
     width: 55px;

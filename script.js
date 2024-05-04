@@ -45,9 +45,15 @@ document.body.addEventListener('keydown', (e) => {
     } else if (appID == 6) {
         searchbar.value = 'orzechgpt';
         appID = 6;
-    } else if (appID >= 7) {
+    } else if (appID == 7) {
         searchbar.value = 'fnafMovie';
         appID = 7;
+    } else if (appID == 8) {
+        searchbar.value = 'weather';
+        appID = 8;
+    } else if (appID >= 9) {
+        searchbar.value = 'dino';
+        appID = 9;
     }
 
     if (e.key == 'Enter') {
@@ -76,9 +82,14 @@ document.body.addEventListener('keydown', (e) => {
             case 7:
                 runFnaf();
                 break;
+            case 8:
+                runWeatherAPP();
+                break;
+            case 9:
+                runChromeDino();
+                break;
         }
     }
-
     switch(e.key) {
         case '0':
             searchbar.value = 'null';
@@ -112,11 +123,18 @@ document.body.addEventListener('keydown', (e) => {
             searchbar.value = 'fnafMovie';
             appID = 7;
             break;
+        case '8':
+            searchbar.value = 'weather';
+            appID = 8;
+            break;
+        case '9':
+            searchbar.value = 'dino';
+            appID = 9;
+            break;
     }
 });
-
 function runTicTacToe() {
-    window.open('https://user908812.github.io/ticTacToe/', '_blank');
+    window.open('https://user908812.github.io/TicTacToe/', '_blank');
 }
 function runMinecraft() {
     window.open('https://user908812.github.io/Minecraft/', '_blank');
@@ -136,3 +154,19 @@ function runOrzechGPT() {
 function runFnaf() {
     window.open('https://user908812.github.io/Fnaf/', '_blank');
 }
+function runWeatherAPP() {
+    window.open('https://user908812.github.io/Weather/', '_blank');
+}
+function runChromeDino() {
+    window.open('https://user908812.github.io/Dino/', '_blank');
+}
+
+let powerButton = document.getElementById('powerButton');
+powerButton.addEventListener('click', () => {
+    let screen = document.getElementById('screen');
+    screen.hidden = true;
+
+    powerButton.style.position = 'absolute';
+    powerButton.style.top = '800px';
+    powerButton.style.left = '922px';
+});
