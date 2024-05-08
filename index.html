@@ -22,7 +22,7 @@
                     <div id="time"></div>
                     <hr>
                     <div id="searchbar-container">
-                        <select name="searchbar" id="searchbar">
+                        <select name="searchbar" id="searchbar" onchange="openSelectedApp()">
                             <option value="null" selected></option>
                             <option value="tictactoe">TicTacToe</option>
                             <option value="minecraft">Minecraft</option>
@@ -33,6 +33,7 @@
                             <option value="fnafMovie">FnafMovie</option>
                             <option value="weather">Weather</option>
                             <option value="dino">Dino</option>
+                            <option value="capybara">Capybara chatting</option>
                         </select>
                     </div>
                 </div>
@@ -81,7 +82,11 @@
                 <div class="apps">
                     <div class="app">
                         <img draggable="false" class="logo" src="dino.png" alt="dino.png" onclick="runChromeDino()">
-                        <div class="app-name">Dino</div>
+                        <div class="app-name"><span class="new">New </span>Dino</div>
+                    </div>
+                    <div class="app">
+                        <img draggable="false" class="logo" src="capybara.png" alt="capybara.png" onclick="runCapybaraChatting()">
+                        <div class="app-name"><span class="new">New </span>Capybara chatting</div>
                     </div>
                 </div>
             </div>

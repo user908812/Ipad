@@ -51,9 +51,12 @@ document.body.addEventListener('keydown', (e) => {
     } else if (appID == 8) {
         searchbar.value = 'weather';
         appID = 8;
-    } else if (appID >= 9) {
+    } else if (appID == 9) {
         searchbar.value = 'dino';
         appID = 9;
+    } else if (appID >= 10) {
+        searchbar.value = 'capybara';
+        appID = 10;
     }
 
     if (e.key == 'Enter') {
@@ -87,6 +90,9 @@ document.body.addEventListener('keydown', (e) => {
                 break;
             case 9:
                 runChromeDino();
+                break;
+            case 10:
+                runCapybaraChatting();
                 break;
         }
     }
@@ -159,6 +165,22 @@ function runWeatherAPP() {
 }
 function runChromeDino() {
     window.open('https://user908812.github.io/Dino/', '_blank');
+}
+function runCapybaraChatting() {
+    window.open('https://user908812.github.io/Chat/', '_blank');
+}
+
+function openSelectedApp() {
+    searchbar.value == 'tictactoe' ? runTicTacToe() : false;
+    searchbar.value == 'minecraft' ? runMinecraft() : false;
+    searchbar.value == 'amongTheBullets' ? runAmongTheBullets() : false;
+    searchbar.value == 'orzechBrowser' ? runOrzechBrowser() : false;
+    searchbar.value == 'robloxWebsite' ? runRobloxWebsite() : false;
+    searchbar.value == 'orzechgpt' ? runOrzechGPT() : false;
+    searchbar.value == 'fnafMovie' ? runFnaf() : false;
+    searchbar.value == 'weather' ? runWeatherAPP() : false;
+    searchbar.value == 'dino' ? runChromeDino() : false;
+    searchbar.value == 'capybara' ? runCapybaraChatting() : false;
 }
 
 let powerButton = document.getElementById('powerButton');
